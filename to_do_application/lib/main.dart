@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
+  var date = DateTime.now();
+  print(date.hour.toString() + " " + date.minute.toString());
 }
 
 class MyApp extends StatelessWidget {
