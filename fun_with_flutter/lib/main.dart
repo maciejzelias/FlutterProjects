@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
+}
+
+class CounterState extends ChangeNotifier {
+  int count = 0;
+
+  updateCount() {
+    count++;
+    notifyListeners();
+  }
 }
 
 randomColor() {
